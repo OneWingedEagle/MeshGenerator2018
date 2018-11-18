@@ -1,0 +1,141 @@
+Model Description
+
+Number_of_Blocks: 13
+
+space :
+
+Material: air
+   Block_Boundaries: [ -1000.0 1000.0 -1000.0 1000.0 -1000.0 1000.0 ]
+   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+
+region 1: 
+
+Material: coil1
+   Block_Boundaries: [ -200.0 200.0 200.0 220.0 -100.0 100.0 ]
+   discretize: false  true  true  false  true  false  false  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ -2000000.0 0.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 2: 
+
+Material: coil2
+   Block_Boundaries: [ -220.0 -200.0 -200.0 200.0 -100.0 100.0 ]
+   discretize: true  false  false  true  false  true  true  false  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 0.0 -2000000.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 3: 
+
+Material: coil3
+   Block_Boundaries: [ 200.0 220.0 -200.0 200.0 -100.0 100.0 ]
+   discretize: true  false  false  true  false  true  true  false  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 0.0 2000000.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 4: 
+
+Material: coil4
+   Block_Boundaries: [ -220.0 -200.0 -220.0 -200.0 -100.0 100.0 ]
+   discretize: true  false  false  true  true  false  false  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 1000000.0 -1000000.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 5: 
+
+Material: coil5
+   Block_Boundaries: [ 200.0 220.0 -220.0 -200.0 -100.0 100.0 ]
+   discretize: true  false  false  true  true  false  false  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 1000000.0 1000000.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 6: 
+
+Material: coil6
+   Block_Boundaries: [ 200.0 220.0 200.0 220.0 -100.0 100.0 ]
+   discretize: true  false  false  true  true  false  false  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ -1000000.0 1000000.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 7: 
+
+Material: coil7
+   Block_Boundaries: [ -220.0 -200.0 200.0 220.0 -100.0 100.0 ]
+   discretize: true  false  false  true  true  false  false  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ -1000000.0 -1000000.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 8: 
+
+Material: coil8
+   Block_Boundaries: [ -200.0 200.0 -220.0 -200.0 -100.0 100.0 ]
+   discretize: false  true  true  false  true  false  false  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1.0 1.0 1.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 2000000.0 0.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 9: 
+
+Material: iron1
+   Block_Boundaries: [ 160.0 560.0 -160.0 160.0 -400.0 -200.0 ]
+   discretize: true  true  true  true  true  true  true  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1000.0 1000.0 1000.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 0.0 0.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 10: 
+
+Material: iron2
+   Block_Boundaries: [ -160.0 160.0 -160.0 160.0 -400.0 400.0 ]
+   discretize: true  true  true  true  true  true  true  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1000.0 1000.0 1000.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 0.0 0.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 11: 
+
+Material: iron3
+   Block_Boundaries: [ 160.0 560.0 -160.0 160.0 200.0 400.0 ]
+   discretize: true  true  true  true  true  true  true  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1000.0 1000.0 1000.0 ]
+ sigma: [ 0.0 0.0 0.0 ]
+     J: [ 0.0 0.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 12: 
+
+Material: iron4
+   Block_Boundaries: [ 300.0 560.0 -160.0 160.0 -200.0 -5.0 ]
+   discretize: true  true  true  true  true  true  true  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1000.0 1000.0 1000.0 ]
+ sigma: [ 1.0E7 1.0E7 1.0E7 ]
+     J: [ 0.0 0.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+
+region 13: 
+
+Material: iron4
+   Block_Boundaries: [ 300.0 560.0 -160.0 160.0 5.0 200.0 ]
+   discretize: true  true  true  true  true  true  true  true  true  true  true  true  
+Linear BH Curve:   mur: [ 1000.0 1000.0 1000.0 ]
+ sigma: [ 1.0E7 1.0E7 1.0E7 ]
+     J: [ 0.0 0.0 0.0 ]
+     M: [ 0.0 0.0 0.0 ]
+

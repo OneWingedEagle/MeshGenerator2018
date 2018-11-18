@@ -1,0 +1,58 @@
+Number_of_Regions: 3
+
+Boundary condition ( D: Dirichlet  N: Neumann PS: Periodic , PA: Anti-periodic) :
+Boundary 1: D, [ 0.0 0.0 0.0 ] 
+Boundary 2: D, [ 0.0 0.0 0.0 ] 
+Boundary 3: D, [ 0.0 0.0 0.0 ] 
+Boundary 4: D, [ 0.0 0.0 0.0 ] 
+Boundary 5: D, [ 0.0 0.0 0.0 ] 
+Boundary 6: D, [ 0.0 0.0 0.0 ] 
+
+region 1: 
+Name: block1
+Material: iron
+Nonlinear: false
+   mur: [ 1000.0 1000.0 1000.0 ]
+   sigma: [ 0.0 0.0 0.0 ]
+   J: [ 0.0 0.0 0.0 ]
+   M: [ 0.0 0.0 0.0 ]
+Young's Moduls: 2.1E11
+Posion's Ratio: 0.3
+
+region 2: 
+Name: block2
+Material: wood
+Nonlinear: false
+   mur: [ 1000.0 1000.0 1000.0 ]
+   sigma: [ 0.0 0.0 0.0 ]
+   J: [ 0.0 0.0 0.0 ]
+   M: [ 0.0 0.0 0.0 ]
+Young's Moduls: 1.0E10
+Posion's Ratio: 0.1
+
+region 3: 
+Name: airSpace
+Material: air
+Nonlinear: false
+   mur: [ 1.0 1.0 1.0 ]
+   sigma: [ 0.0 0.0 0.0 ]
+   J: [ 0.0 0.0 0.0 ]
+   M: [ 0.0 0.0 0.0 ]
+Young's Moduls: 1.0
+Posion's Ratio: 0.0
+
+Analysis type (0: Magneto static, 1: Eddy current A method, 2: Eddy currrent A-phi method ): 0
+
+Deformation: false
+
+Deformation mode: 0
+
+Coupled: false
+
+coupling2(vms): false
+
+calulate Curves: false
+
+coupling3(Tmsf): false
+
+motor: false
